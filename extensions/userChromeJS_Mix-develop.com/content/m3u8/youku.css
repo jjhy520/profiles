@@ -12,3 +12,18 @@ body {
   max-width: 100%;
   height: 100%;
 }
+#videolist {
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: .2s ease 1s;
+}
+#videolist:hover {
+  opacity: 1;
+  transition: .2s;
+}
+#videolist > li {
+  list-style-type: none;
+}
