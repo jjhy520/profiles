@@ -4,5 +4,6 @@ wget.exe -N --no-check-certificate https://github.com/jjhy520/profiles/archive/m
 7z.exe x master.zip -y
 ren profiles-master profiles
 xcopy "profiles" ..\..\ /s /y /i
+rd "profiles" /s/q
 rd "profiles-master" /s/q
 del "master.zip"
