@@ -19,7 +19,7 @@ var getContent = function(body){
 }
 
 var http = new ActiveXObject('MSXML2.XMLHTTP');
-http.open('GET', 'http://www.ishadowsocks.mobi/', false);
+http.open('GET', 'http://www.ishadow.pw/', false);
 http.send();
 
 var a = getContent(http.responseBody);
