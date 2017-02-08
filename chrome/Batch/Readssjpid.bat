@@ -19,7 +19,7 @@ var getContent = function(body){
 }
 
 var http = new ActiveXObject('MSXML2.XMLHTTP');
-http.open('GET', 'http://www.ishadow.club/', false);
+http.open('GET', 'http://www.ishadow.pro/', false);
 http.send();
 
 var a = getContent(http.responseBody);
