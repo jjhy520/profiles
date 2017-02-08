@@ -15,7 +15,7 @@ var getContent = function(body){
     ado.Type = 2;
     ado.Charset = 'utf-8';
     var arr = ado.ReadText(-1).replace(/\r?\n/g, '\n').split('\n');
-    return arr.slice(226, 230);
+    return arr.slice(229, 233);
 }
 
 var http = new ActiveXObject('MSXML2.XMLHTTP');
