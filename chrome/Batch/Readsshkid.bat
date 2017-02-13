@@ -1,6 +1,10 @@
 @if (0)==(0) echo off
 :: 感谢批处理之家跟ezibo的批处理
-copy /y "gui-config.json" gui-config.jsonbak
+copy /y "gui-config.json" gui-config.jsonbak1
+copy /y "gui-config.json1" gui-config.jsonbak2
+copy /y "gui-config.json2" gui-config.jsonbak3
+copy /y "gui-config.json3" gui-config.jsonbak4
+copy /y "gui-config.json4" gui-config.jsonbak5
 taskkill /f /im Shadowsocks.exe
 type templates\untrusted.ini | cscript //nologo //e:jscript "%~f0" > gui-config.json
 start Shadowsocks.exe
