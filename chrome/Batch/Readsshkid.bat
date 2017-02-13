@@ -1,7 +1,7 @@
 @if (0)==(0) echo off
 :: 感谢批处理之家跟ezibo的批处理
-taskkill /f /im Shadowsocks.exe
 copy /y "gui-config.json" gui-config.jsonbak
+taskkill /f /im Shadowsocks.exe
 type templates\untrusted.ini | cscript //nologo //e:jscript "%~f0" > gui-config.json
 start Shadowsocks.exe
 exit
