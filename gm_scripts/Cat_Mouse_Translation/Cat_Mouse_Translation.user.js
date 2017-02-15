@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name            Cat Mouse Translation 
 // @namespace       https://github.com/catcat520/CatMouseTranslation
 // @author          catcat520
