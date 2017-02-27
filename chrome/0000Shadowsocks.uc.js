@@ -143,7 +143,7 @@ function    RunSS() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBro
 
 function    updateSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'update-SSID.bat']).launch();};
 
-function    SSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://doub.io/sszhfx"); };
+function    SSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7"); };
 
 function    backSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'back-SSID.bat']).launch();};
 
