@@ -131,11 +131,11 @@ function    RunSSus() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); va
 
 function    RunSShk() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'Readsshkid.bat']).launch();};
 
-function    RunSSjp2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://www.shadowsocks8.biz/images/server03.png"); };
+function    RunSSjp2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server03.png"); };
 
-function    RunSSus2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://www.shadowsocks8.biz/images/server01.png"); };
+function    RunSSus2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server01.png"); };
 
-function    RunSShk2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://www.shadowsocks8.biz/images/server02.png"); };
+function    RunSShk2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server02.png"); };
 
 function    UPHosts() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'update-Hosts.bat']).launch();};
 
