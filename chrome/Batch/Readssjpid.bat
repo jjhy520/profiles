@@ -24,7 +24,7 @@ var getContent = function(body){
 }
 
 var http = new ActiveXObject('MSXML2.XMLHTTP');
-http.open('GET', 'http://a.ishadow.co/', false);
+http.open('GET', 'https://a.ishadow.tech/', false);
 http.send();
 
 var a = getContent(http.responseBody);
