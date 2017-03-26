@@ -149,7 +149,7 @@ function    RunSSus4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); g
 function    RunSSsg1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server02.png"); };
 function    RunSSsg2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sga.png"); };
 function    RunSSsg3() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sgb.png"); };
-function    RunSSsg4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sgc.png"); };
+function    RunSSsg4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://get.ishadow.website/img/qr/sgc.png"); };
 
 function    RunJC() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://71bbs.people.com.cn/postImages/78/96/78/2B/1483786844203.gif"); };
 
