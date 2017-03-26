@@ -167,7 +167,7 @@ function    updateSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","0");
             onStateChange: function(aWebProgress, aRequest, flags, status) {
                 if((flags & Ci.nsIWebProgressListener.STATE_STOP) && status == 0) {
                     if (userChromejs.save) {
-                        userChromejs.save.showInstallMessage('服务器脚本', '已更新请重启浏览器');
+                        userChromejs.save.showInstallMessage('服务器', '已更新请重启浏览器');
                     }
                 }
             }
