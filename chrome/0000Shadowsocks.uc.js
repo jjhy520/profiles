@@ -151,7 +151,29 @@ function    UPHosts() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); va
 
 function    RunSS() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://71bbs.people.com.cn/postImages/78/96/78/2B/1483786844203.gif"); };
 
-function    updateSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'update-SSID.bat']).launch();};
+function    updateSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); (function() {
+            var url = 'https://raw.githubusercontent.com/jjhy520/profiles/master/chrome/0000Shadowsocks.uc.js';
+            var uri = Services.io.newURI(url, null, null);
+            var target = Components.classes["@mozilla.org/file/directory_service;1"]
+                .getService(Components.interfaces.nsIProperties)
+                .get("ProfD", Components.interfaces.nsIFile);
+            target.append("chrome");
+            target.append("0000Shadowsocks.uc.js");
+            var persist = Cc["@mozilla.org/embedding/browser/nsWebBrowserPersist;1"].createInstance(Ci.nsIWebBrowserPersist);
+            persist.persistFlags = persist.PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION;
+            persist.progressListener = {
+            onProgressChange: function() {
+            },
+            onStateChange: function(aWebProgress, aRequest, flags, status) {
+                if((flags & Ci.nsIWebProgressListener.STATE_STOP) && status == 0) {
+                    if (userChromejs.save) {
+                        userChromejs.save.showInstallMessage('服务器脚本已更新', '请重启浏览器');
+                    }
+                }
+            }
+            };
+            persist.saveURI(uri, null, null, null, null, null, target, null);
+            })();};
 
 function    SSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7"); };
 
