@@ -136,17 +136,17 @@ var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"){'
 function    RunSS() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'Shadowsocks.exe']).launch();};
 function    backSSID() { gBrowser.mPrefs.setIntPref("network.proxy.type","1"); var file = FileUtils.getFile('UChrm',['Batch', 'back-SSID.bat']).launch();};
 
-function    RunSSjp1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server03.png"); };
+function    RunSSjp1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://ss8.pm/images/server03.png"); };
 function    RunSSjp2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/jpa.png"); };
 function    RunSSjp3() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/jpb.png"); };
 function    RunSSjp4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/jpc.png"); };
 
-function    RunSSus1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server01.png"); };
+function    RunSSus1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://ss8.pm/images/server01.png"); };
 function    RunSSus2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/usa.png"); };
 function    RunSSus3() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/usb.png"); };
 function    RunSSus4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/usc.png"); };
 
-function    RunSSsg1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://free.shadowsocks8.cc/images/server02.png"); };
+function    RunSSsg1() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://ss8.pm/images/server02.png"); };
 function    RunSSsg2() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sga.png"); };
 function    RunSSsg3() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sgb.png"); };
 function    RunSSsg4() { gBrowser.mPrefs.setIntPref("network.proxy.type","0"); gBrowser.loadURI("http://isx.yt/img/qr/sgc.png"); };
