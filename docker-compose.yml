@@ -19,7 +19,7 @@ services:
       - "github.com:13.229.188.59"
       - "raw.githubusercontent.com:151.101.228.133"
     environment:
-      - JD_COOKIE=pt_key=AAJgYVGaADAEMBX8XC_YwEULFpsQVHZyqSYgp-uKYLhSWh0ZvAAIVgKfsX_101bVuBYmt20Vw0w;pt_pin=jjhy520&pt_key=AAJgYVQKADA4Bdk1HEUXg_FkWQL53Xhx3Ss2WPx2lVwG7rCaX2apZxd31WZ_evZLhwdyDLm4Lbo;pt_pin=jjhy1314520&pt_key=AAJgWE81ADAkTwbZpjgl7Ra3VmxI7kEX6ljAhrUxm6RJQKUBZLGDz3FDjmZ8xx7a86hSSlBwcR0;pt_pin=1264238-78088314&AAJgZI9fADDRThg5lmVmpiq9mH_t8PEAbSGCcT_kV92AOhuqpTmLmVKl1hVxNJhIIgpM9PBs9No;pt_pin=jd_5c57bdc73068d;
+      - JD_COOKIE=pt_key=AAJgYVGaADAEMBX8XC_YwEULFpsQVHZyqSYgp-uKYLhSWh0ZvAAIVgKfsX_101bVuBYmt20Vw0w;pt_pin=jjhy520;&pt_key=AAJgYVQKADA4Bdk1HEUXg_FkWQL53Xhx3Ss2WPx2lVwG7rCaX2apZxd31WZ_evZLhwdyDLm4Lbo;pt_pin=jjhy1314520;&pt_key=AAJgWE81ADAkTwbZpjgl7Ra3VmxI7kEX6ljAhrUxm6RJQKUBZLGDz3FDjmZ8xx7a86hSSlBwcR0;pt_pin=1264238-78088314;&pt_key=AAJgbIQfADDvse6HptaQ_4dHrC70oDoVvYO0u7JhMefGX7DKd8F0MT8PCWnAOzJqQBz7ErbGHI8;pt_pin=jd_5c57bdc73068d;&pt_key=AAJgbIPEADDg_HW6aLoBnlJT3HeXROCo85NOF6KCGi5B6JbknPNlyPj1uJUpcrhjzN_1aLuXTms;pt_pin=wdPqAEwfUgblOm;
       #- PUSH_KEY=SCU130938Ta6b4bc4d9b6bfab9bcd073c3db529e825fc32defb5d31
       - PUSH_KEY=SCU130938Ta6b4bc4d9b6bfab9bcd073c3db529e825fc32defb5d31
       - CRZAY_JOY_COIN_ENABLE=Y
