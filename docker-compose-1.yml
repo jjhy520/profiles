@@ -1,0 +1,47 @@
+version: "3"
+services:
+  jd_scripts1: #默认
+    image: lxk0301/jd_scripts
+    # 配置服务器资源约束。此例子中服务被限制为使用内存不超过200M以及cpu不超过 0.2（单核的20%）
+    # 经过实际测试，建议不低于200M
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: 256M
+    restart: always
+    container_name: jd_scripts1
+    tty: true
+    volumes:
+      - ./logs1/:/scripts/logs
+    extra_hosts:
+      - "gitee.com:180.97.125.228"
+      - "github.com:13.229.188.59"
+      - "raw.githubusercontent.com:151.101.228.133"
+    environment:
+      - JD_COOKIE=pt_key=AAJgYVGaADAEMBX8XC_YwEULFpsQVHZyqSYgp-uKYLhSWh0ZvAAIVgKfsX_101bVuBYmt20Vw0w;pt_pin=jjhy520&pt_key=AAJgYVQKADA4Bdk1HEUXg_FkWQL53Xhx3Ss2WPx2lVwG7rCaX2apZxd31WZ_evZLhwdyDLm4Lbo;pt_pin=jjhy1314520&pt_key=AAJgWE81ADAkTwbZpjgl7Ra3VmxI7kEX6ljAhrUxm6RJQKUBZLGDz3FDjmZ8xx7a86hSSlBwcR0;pt_pin=1264238-78088314&AAJgZI9fADDRThg5lmVmpiq9mH_t8PEAbSGCcT_kV92AOhuqpTmLmVKl1hVxNJhIIgpM9PBs9No;pt_pin=jd_5c57bdc73068d;
+      #- PUSH_KEY=SCU130938Ta6b4bc4d9b6bfab9bcd073c3db529e825fc32defb5d31
+      - PUSH_KEY=SCU130938Ta6b4bc4d9b6bfab9bcd073c3db529e825fc32defb5d31
+      - CRZAY_JOY_COIN_ENABLE=Y
+      - JD_JOY_REWARD_NAME=500
+      - MARKET_COIN_TO_BEANS=1000
+      - JDJOY_APPLYJDBEAN=2000
+      - MONEY_TREE_SELL_FRUIT=true
+      - JOY_FEED_COUNT=80
+      - JOY_RUN_FLAG=true
+      - JOY_TEAM_LEVEL=2
+      - JOY_RUN_NOTIFY=true
+      - JOY_RUN_HELP_MYSELF=true
+      - JOIN_PK_TEAM=true
+      - FRUIT_BEAN_CARD=true
+      - ENABLE_AUTO_HELP=true
+      # - REPO_URL=http://xunxunnas.dscloud.me:1666/xunxun1982/jd_scripts2
+      #- TG_BOT_TOKEN=1713568892:AAFwnK7dvZJtgWY2CnUMHfHDtRkb8ag6g5E
+      #- TG_USER_ID=1091076982
+      #- DD_BOT_TOKEN=a510122fb71e3bf4ffcf99b0f748c66fc8f633707dcbf1a69bb353778728f7b2
+      #- DD_BOT_SECRET=SECa6a80bc8a3e3faf57cbe5aca5fa981756
+      # 互助助码等参数可自行增加，如下。
+      # 京东种豆得豆
+      # - PLANT_BEAN_SHARECODES=
+
+
